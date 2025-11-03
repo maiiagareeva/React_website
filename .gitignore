@@ -4,8 +4,15 @@ dist/
 .vite/
 .env
 
-# system
-.DS_Store
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# build
-*.log
+# editor junk
+.DS_Store
+.idea/
+.vscode/
+
+# build artifacts
+coverage/
