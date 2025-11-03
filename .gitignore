@@ -18,4 +18,5 @@ yarn-error.log*
 coverage/
 
 #local images
-public/images/*
+public/images/photo*.jpg
+public/images/photo*.png
