@@ -16,8 +16,3 @@ yarn-error.log*
 
 # build artifacts
 coverage/
-
-#local images
-public/images/photo*.jpg
-public/images/photo*.png
-static/MG_CV_current.pdf

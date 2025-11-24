@@ -16,7 +16,7 @@ export default function Home(){
             </p>
             <div className="buttons">
               <a className="btn" href="/projects">View projects →</a>
-              <a className="btn download-btn" href="static/MG_CV_current.pdf" target="_blank" rel="noopener noreferrer">Download CV →</a>
+              <a className="btn download-btn" href="static/MG_CV_current.pdf" target="_blank" rel="noopener noreferrer">View CV →</a>
             </div>
             <div className="links">
               <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn ↗</a>
@@ -25,7 +25,7 @@ export default function Home(){
 
           </div>
           <div className="hero-right">
-            <img src="/images/back.JPG" alt="BeeInBoots logo" />
+            <img src="/images/me.JPG" alt="BeeInBoots logo" />
           </div>
         </section>
       </main>
