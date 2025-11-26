@@ -77,24 +77,6 @@ export default function Projects() {
       coordination across co-organizers and participants calmness.`,
     },
     {
-      title: "GEE",
-      desc: "Working with GEE API.",
-      img: "/projects_img/gee.png",
-      skills: ["Python","JavaScript", "Google Earth Engine", "Google Cloud SQL Studio"],
-      duration: "December 2025",
-      link: "https://github.com/alexxxroz/total-forest.git",
-      longDesc: `
-      I was working on fixing and improving the system that 
-      generates special alarms based on satellite images. 
-      This system works with analysing received data and processing 
-      appropriate images time to time. There is a new feature in
-      generating a report that collect satelite images from a specific period
-      and send all information to the user.\n
-      Main interface here is generating such "alarms" for the specific Region Of Interest 
-      and look after it during some time.
-      `,
-    },
-    {
       title: "High School Photoset",
       desc: "Made a personal requested photoset for a girl.",
       img: "/projects_img/photoset.jpg",
