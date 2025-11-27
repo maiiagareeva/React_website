@@ -1,12 +1,9 @@
 import React, { useState } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 export default function About(){
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
-      <Navbar />
       <main className="container section">
         <h2 className="title">ABOUT ME</h2>
         <div className="about-grid">
@@ -62,7 +59,6 @@ export default function About(){
           </div>
         )}
       </main>
-      <Footer />
     </>
   );
 }

@@ -1,14 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-
-// const photos = Array.from({length:12}, (_,i)=>`/images/photo${i+1}.jpg`);
-
-// const photos = [];
-// for (let i = 1; i <= 30; i++) {
-//   const path = `/images/photo${i}.jpg`;
-//   photos.push(path);
-// }
 
 const photoFiles = import.meta.glob('/public/images/photo*.jpg', { eager: true, import: 'default' });
 const photos = Object.keys(photoFiles).map((path) => path.replace('/public', ''));
@@ -56,7 +46,6 @@ export default function Photography(){
 
   return (
     <>
-      <Navbar />
       <main className="container section">
         <h2 className="title">
           PHOTOGRAPHY
@@ -77,7 +66,6 @@ export default function Photography(){
           ))}
         </div>
       </main>
-      <Footer />
 
       {isOpen && (
         <div className="lightbox" onClick={close}>

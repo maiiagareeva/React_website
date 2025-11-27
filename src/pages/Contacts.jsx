@@ -1,11 +1,8 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 export default function Contacts(){
   return (
     <>
-      <Navbar />
       <main className="container section">
         <h2 className="title">CONTACTS</h2>
         <ul className="contacts-list">
@@ -15,7 +12,6 @@ export default function Contacts(){
           <li>🔗 <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a></li>
         </ul>
       </main>
-      <Footer />
     </>
   );
 }

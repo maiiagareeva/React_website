@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -102,7 +100,6 @@ export default function Projects() {
   ];
   return (
     <>
-      <Navbar />
       <main className="container section">
         <h2 className="title">MY PROJECTS</h2>
         <div className="cards">
@@ -135,9 +132,7 @@ export default function Projects() {
           ))}
         </div>
       </main>
-      <Footer />
 
-      {/* Modal */}
       {selectedProject && (
   <div className="modal" onClick={() => setSelectedProject(null)}>
     <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -153,16 +148,14 @@ export default function Projects() {
         />
       </div>
 
-      {/* Thorough description */}
       <div className="modal-desc">
         <p>Description</p>
         {(selectedProject.longDesc || selectedProject.desc)
           .trim()
-          .split(/\n\s*\n/) // split by blank lines
+          .split(/\n\s*\n/)
           .map((para, idx) => <p key={idx}>{para}</p>)}
       </div>
 
-      {/* Metadata at the end */}
       <div className="modal-meta">
         {selectedProject.skills && (
           <p><strong>Skills:</strong> {selectedProject.skills.join(", ")}</p>
