@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export default function About(){
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
       <Navbar />
@@ -47,9 +48,19 @@ export default function About(){
             </ul>
           </div>
           <div className="hero-right">
-            <img src="/images/backgrey.jpg" alt="My portrait" />
+            <img src="/images/backgrey.jpg" alt="My portrait" className="clickable-image"
+              onClick={() => setIsModalOpen(true)} />
           </div>
         </div>
+        {isModalOpen && (
+          <div className="modal" onClick={() => setIsModalOpen(false)}>
+            <img
+              src="/images/backgrey.jpg"
+              alt="My portrait large"
+              className="modal-content"
+            />
+          </div>
+        )}
       </main>
       <Footer />
     </>

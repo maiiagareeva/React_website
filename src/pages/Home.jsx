@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
 export default function Home(){
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
       <Navbar />
@@ -26,9 +27,19 @@ export default function Home(){
 
           </div>
           <div className="hero-right">
-            <img src="/images/portray.jpg" alt="BeeInBoots logo" />
+            <img src="/images/portray.jpg" alt="Maiia Gareeva Portrait" className="clickable-image"
+              onClick={() => setIsModalOpen(true)}/>
           </div>
         </section>
+        {isModalOpen && (
+          <div className="modal" onClick={() => setIsModalOpen(false)}>
+            <img
+              src="/images/portray.jpg"
+              alt="Maiia Gareeva portrait large"
+              className="modal-content"
+            />
+          </div>
+        )}
       </main>
       <Footer />
     </>
