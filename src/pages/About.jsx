@@ -43,7 +43,7 @@ export default function About(){
             <h3>Get In Touch</h3>
             <p>I'm always open to new opportunities and collaborations. Feel free to reach out if you'd like to work together!</p>
             <ul>
-              <li><a href="mailto:mailiagareeva@gmail.com">mailiagareeva@gmail.com</a></li>
+              <li><a href="mailto:mailiagareeva@gmail.com">maiiagareeva@gmail.com</a></li>
               <li>Minneapolis, MN, United States</li>
             </ul>
           </div>
