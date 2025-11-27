@@ -40,7 +40,6 @@ a {
 .container {
   width: min(90vw, 80rem); /* never exceed 80rem (~1280px), but shrink fluidly */
   margin-inline: auto;
-  padding-inline: clamp(1rem, 2vw, 3rem);
 }
 
 .navbar{
@@ -588,12 +587,15 @@ a {
   }
   .about-grid {
     max-width: 100%;
+    grid-template-columns: 1fr;
+    align-items: center;
   }
 
   .hero {
     grid-template-columns: 1fr;
     text-align: center;
     gap: 3vw;
+    align-items: center;
   }
 
   .hero-left {
@@ -601,8 +603,7 @@ a {
   }
 
   .hero-right {
-    max-width: 80%;
-    margin: 0 auto;
+    max-width: 100%;
   }
 
   .photo-grid {
@@ -670,8 +671,6 @@ a {
   .burger-area:has(.burger-menu:hover) .burger-menu {
     opacity: 1;
     visibility: visible;
-    /* transform: translateY(1rem); */
-    /* pointer-events: auto; */
   }
 
   .burger-menu a {
@@ -743,8 +742,9 @@ a {
     right: 0;
   }
 
-  .about-grid{
-    grid-template-columns: repeat(auto-fit, minmax(80vw, 1fr));
-    gap: 2vw;
+  .about-grid {
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    align-items: center;
   }
 }

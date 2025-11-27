@@ -32,7 +32,7 @@ export default function About(){
             </p>
             <h3>What I Do</h3>
             <ul className="skills">
-              <li><strong>Web Development</strong><span>HTML, CSS, JavaScript, React, Django</span></li>
+              <li><strong>Web Development</strong><span>HTML, CSS, JavaScript, React, Vite</span></li>
               <li><strong>Data Science</strong><span>Python, SQL, Java, Machine Learning, LLM</span></li>
               <li><strong>Photography</strong><span>Landscape, Portrait, Nature</span></li>
               <li><strong>UI/UX Design</strong><span>Figma, prototyping, user interface</span></li>
