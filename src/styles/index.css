@@ -217,18 +217,14 @@ a {
 }
 
 .info-popup {
-  visibility: hidden;
-  opacity: 0;
   position: absolute;
   top: 130%;
-  left: 50%;
-  transform: translateX(-50%);
   background: #111;
   color: white;
   padding: clamp(0.4rem, 1vw, 1rem);
   border-radius: 0.8vw;
   font-size: clamp(0.8rem, 0.9vw, 1rem);
-  width: min(60vw, 10rem);
+  width: min(45vw, 61vw);
   text-align: center;
   line-height: 1.3;
   box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.3);
@@ -236,12 +232,18 @@ a {
   max-width: 90vw;
   white-space: normal;
   overflow-wrap: break-word;
+  visibility: hidden;
+  opacity: 0;
+  left: 30%;
+  transform: translateX(-50%);
+  max-width: calc(100vw - 2rem);
+  margin-right: clamp(0.5rem, 2vw, 2rem);
 }
 
 .info-icon:hover .info-popup {
   visibility: visible;
   opacity: 0.8;
-  transform: translateX(-50%) translateY(-0.4vw);
+  /* transform: translateX(-50%) translateY(-0.4vw); */
 }
 
 
@@ -348,6 +350,10 @@ a {
 
 .about-grid p:first-of-type {
   text-indent: 2vw;
+}
+
+.about-link {
+  text-decoration: underline;
 }
 
 .skills{
