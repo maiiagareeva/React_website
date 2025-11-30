@@ -27,7 +27,9 @@ body {
   margin:0;
   background: var(--bg);
   color: var(--ink);
-  font-family:"Courier New", ui-monospace, monospace;
+  /* font-family:"Courier New", ui-monospace, monospace; */
+  /* font-family: 'Fira Code', monospace; */
+  font-family: 'Fira Sans', sans-serif;
   font-size: clamp(0.9rem, 1.2vw, 1.2rem);
   line-height: 1.6;
 }
@@ -77,9 +79,9 @@ a {
   background: var(--accent);
 }
 
-.brand span {
-  font-family:"Courier New", ui-monospace, monospace;
-}
+/* .brand span {
+  font-family: 'Fira Sans', sans-serif;
+} */
 
 .top-menu {
   display: flex;
@@ -193,32 +195,6 @@ a {
   transform: scale(1.02);
 }
 
-.modal {
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: zoom-out;
-}
-
-.modal-content {
-  display: block;           
-  background: transparent !important;
-  border: 0 !important;
-  outline: 0 !important;
-  padding: 0 !important;
-  margin: 0 auto !important;
-  box-shadow: none !important;
-  border-radius: 0 !important;
-  max-width: 200vw;
-}
-
 .title{
   position: relative;
   display: inline-flex;
@@ -323,7 +299,7 @@ a {
   overflow-y: auto;
 }
 .modal-content {
-  background: #fff;
+  background: var(--bg);
   max-height: 70vh;
   overflow-y: auto;
   border-radius: 1vw;
@@ -356,9 +332,10 @@ a {
 }
 .close {
   position: absolute;
-  top: 2vh;
+  top: 3vh;
   right: 3vw;
   cursor: pointer;
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
 }
 
 .about-grid{
@@ -675,7 +652,7 @@ a {
 
   .burger-menu a {
     text-align: right;
-    font-family: "Courier New", ui-monospace, monospace;
+    /* font-family: "Courier New", ui-monospace, monospace; */
     font-weight: 400;
     color: var(--ink);
     text-decoration: none;
